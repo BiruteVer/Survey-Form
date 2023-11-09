@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Survey Form</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+      <label id="name-label">Name<input class="textInput" type="text" id="name" placeholder="Enter your name" required></label>
+      <label id="email-label">Email<input type="email" class="textInput" id="email" placeholder="Enter your Email" required></label>
+      <label id="number-label">Age (optional)<input type="number" class="textInput" id="number" min="13" max="120" placeholder="Age"></label>
+      <label id="dropdown-label">Which option best describes your current role?</label>
+<select id="dropdown" class="textInput">
+<option value="">Select current role</option>
+<option value="1">Student</option>
+<option value="2">Full Time Job</option>
+<option value="3">Full Time Learner</option>
+<option value="4">Other</option>
+</select>
+
+<div class="container">
+<legend>Would you recommend this platform to a friend?</legend>
+<label class="custom-label"><input id="definitely" type="radio" name="recommendation" value="definitely" class="inline" /> Definitely</label>
+
+<label class="custom-label"><input id="maybe" type="radio" name="recommendation" value="maybe" class="inline" /> Maybe</label>
+
+<label class="custom-label"><input id="not-sure" type="radio" name="recommendation" value="not-sure" class="inline" /> Not sure</label>
+</div>
+
+<div class="container">
+<legend>What would you like to see improved? <span>(Check all that apply)</span> </legend>
+
+<label class="custom-label">
+<input type="checkbox" value="classes"  name="improvement" class="inline" /> Classes
+</label>
+
+<label class="custom-label">
+<input type="checkbox" value="challenges"  name="improvement" class="inline" /> Challenges
+</label>
+
+<label class="custom-label">
+<input type="checkbox"  value="videos" name="improvement" class="inline" /> Videos
+</label>
+
+<label class="custom-label">
+<input type="checkbox" value="forum"  name="improvement" class="inline" /> Forum
+</label>
+
+<label class="custom-label">
+<input type="checkbox" value="courses" name="improvement" class="inline" /> Additional Courses
+</label>  
+</div>
+
+<label for="comments">Any comments or suggestions?
+<textarea id="comments" name="comments" rows="3" cols="35" class="textInput" placeholder="Enter your comments here..."></textarea>
+</label>
+
+<input type="submit" id="submit" value="Submit" />
+</form>
